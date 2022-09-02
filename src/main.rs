@@ -1,14 +1,10 @@
 #![allow(non_snake_case)]
 #[macro_use] extern crate rocket;
 
-
-#[get("/calculateDisselUsageForDistance")]
-fn fuel_route() -> String {
-    return format!("Fuel used: {}", 20);
-}
+mod routes;
 
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-        .mount("/", routes![fuel_route])
+        .mount("/", routes![routes::fuel_route])
 }
