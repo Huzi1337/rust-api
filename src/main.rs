@@ -6,5 +6,5 @@ mod routes;
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-        .mount("/", routes![routes::fuel_route])
+        .mount("/", routes![routes::fuel_route, routes::fail_route])
 }
