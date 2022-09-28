@@ -1,7 +1,7 @@
 In order to run the API ensure you have Rust installed on your system.
-To start the application navigate to the projects directory and type "cargo run" in the command line.
+To start the application navigate to the project's directory and type "cargo run" in the command line.
 
-The sever will run on localhost:8000 by default.
+The server will run on localhost:8000 by default.
 
 In that case below you'll find working mock URLs for reference:
 Fuel consumption:
